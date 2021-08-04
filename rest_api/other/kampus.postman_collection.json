@@ -1,0 +1,1057 @@
+{
+	"info": {
+		"_postman_id": "09d983ce-3836-4909-a7cb-f314cf176cdc",
+		"name": "kampus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "dosen",
+			"item": [
+				{
+					"name": "addOne",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nid",
+									"value": "17200201",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "fulan2an",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Pria",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0894321432111",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "fulan@fulan.com",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Perum. Taman Asri indah Blok R No.14",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/Dosen/addOne",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"Dosen",
+								"addOne"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/Dosen",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"Dosen"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "fulan",
+									"disabled": true
+								},
+								{
+									"key": "keyword",
+									"value": "18",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByKey",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/Dosen/17200201",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"Dosen",
+								"17200201"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateByKey",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama",
+									"value": "Fulan bin fulan",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Wanita",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0894321432112",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email@yahoo.com",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Perum. Taman Asri indah Blok R No.14",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/Dosen/updateByKey/17200201",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"Dosen",
+								"updateByKey",
+								"17200201"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByKey",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/Dosen/deleteByKey/17200201",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"Dosen",
+								"deleteByKey",
+								"17200201"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "mahasiswa",
+			"item": [
+				{
+					"name": "addOne",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nim",
+									"value": "18300123",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Mahasiswa Cerdas",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Pria",
+									"type": "text"
+								},
+								{
+									"key": "jurusan",
+									"value": "Teknik Informatika",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0895332386571",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "mhsCerdas@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Perum.Taman Alamanda Blok CC14 No.123",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/Mahasiswa/addOne",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"Mahasiswa",
+								"addOne"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/Mahasiswa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"Mahasiswa"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "18",
+									"disabled": true
+								},
+								{
+									"key": "keyword",
+									"value": "cerdas",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByKey",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/Mahasiswa/18300123",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"Mahasiswa",
+								"18300123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateByKey",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama",
+									"value": "Mahasiswa Cerdas updated",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Pria",
+									"type": "text"
+								},
+								{
+									"key": "jurusan",
+									"value": "Sistem Informasi",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0895332386571",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "mhsCerdas@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Perum.Taman Alamanda Blok CC14 No.123",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/Mahasiswa/updateByKey/18300123",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"Mahasiswa",
+								"updateByKey",
+								"18300123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByKey",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/Mahasiswa/deleteByKey/18300123",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"Mahasiswa",
+								"deleteByKey",
+								"18300123"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "mataKuliah",
+			"item": [
+				{
+					"name": "addOne",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "kode",
+									"value": "TI1",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "OOP(Object Orientid Programming)",
+									"type": "text"
+								},
+								{
+									"key": "sks",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "jurusan",
+									"value": "Teknik Informatika",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/MataKuliah/addOne",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"MataKuliah",
+								"addOne"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/MataKuliah",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"MataKuliah"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "oop",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByKey",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/MataKuliah/TI1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"MataKuliah",
+								"TI1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateByKey",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama",
+									"value": "OOP(Object Oriented Programming)",
+									"type": "text"
+								},
+								{
+									"key": "sks",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "jurusan",
+									"value": "Sistem Informasi",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/MataKuliah/updateByKey/TI1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"MataKuliah",
+								"updateByKey",
+								"TI1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByKey",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/MataKuliah/deleteByKey/TI1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"MataKuliah",
+								"deleteByKey",
+								"TI1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "hasilStudy",
+			"item": [
+				{
+					"name": "addOne",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "semester",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "absen",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "tugas",
+									"value": "80",
+									"type": "text"
+								},
+								{
+									"key": "uts",
+									"value": "80",
+									"type": "text"
+								},
+								{
+									"key": "uas",
+									"value": "70",
+									"type": "text"
+								},
+								{
+									"key": "dosenNid",
+									"value": "17200201",
+									"type": "text"
+								},
+								{
+									"key": "mahasiswaNim",
+									"value": "18300123",
+									"type": "text"
+								},
+								{
+									"key": "mataKuliahKode",
+									"value": "TI1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/HasilStudy/addOne",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"HasilStudy",
+								"addOne"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/HasilStudy",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"HasilStudy"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "HS1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByKey",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/HasilStudy/HS118300123",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"HasilStudy",
+								"HS118300123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateByKey",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "semester",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "absen",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "tugas",
+									"value": "80",
+									"type": "text"
+								},
+								{
+									"key": "uts",
+									"value": "80",
+									"type": "text"
+								},
+								{
+									"key": "uas",
+									"value": "70",
+									"type": "text"
+								},
+								{
+									"key": "dosenNid",
+									"value": "17200201",
+									"type": "text"
+								},
+								{
+									"key": "mahasiswaNim",
+									"value": "18300123",
+									"type": "text"
+								},
+								{
+									"key": "mataKuliahKode",
+									"value": "TI1",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/HasilStudy/updateByKey/HS118300123/TI1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"HasilStudy",
+								"updateByKey",
+								"HS118300123",
+								"TI1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByKey",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/HasilStudy/deleteByKey/HS118300123/TI1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"HasilStudy",
+								"deleteByKey",
+								"HS118300123",
+								"TI1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "rencanaStudy",
+			"item": [
+				{
+					"name": "addOne",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "semester",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "banyakPertemuan",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "dosenNid",
+									"value": "17200201",
+									"type": "text"
+								},
+								{
+									"key": "mahasiswaNim",
+									"value": "18300123",
+									"type": "text"
+								},
+								{
+									"key": "mataKuliahKode",
+									"value": "TI1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/RencanaStudy/addOne",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"RencanaStudy",
+								"addOne"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/RencanaStudy",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"RencanaStudy"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "RS1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByKey",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/RencanaStudy/RS118300123/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"RencanaStudy",
+								"RS118300123",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateByKey",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "semester",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "banyakPertemuan",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "dosenNid",
+									"value": "17200201",
+									"type": "text"
+								},
+								{
+									"key": "mahasiswaNim",
+									"value": "18300123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/RencanaStudy/updateByKey/RS118300123/TI1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"RencanaStudy",
+								"updateByKey",
+								"RS118300123",
+								"TI1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByKey",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/RencanaStudy/deleteByKey/RS118300123/TI1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"RencanaStudy",
+								"deleteByKey",
+								"RS118300123",
+								"TI1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "4899e262-e69f-4843-afae-071450ae9585",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9a46e6c2-1721-44c4-a772-0e535aa922a9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
